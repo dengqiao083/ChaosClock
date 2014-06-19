@@ -2,7 +2,7 @@
  * This class is just for learning JavaFX and practises.
  */
 
-package com.chaos.javafx.sample.clock;
+package chaos;
 
 import java.util.Calendar;
 import javafx.animation.Animation;
