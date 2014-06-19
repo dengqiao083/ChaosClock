@@ -56,7 +56,7 @@ public class ClockDemo extends Application {
         }
         
         //Define hour hand
-        Line hourHand = new Line(0d, 0d, 0d, -90d);
+        Line hourHand = new Line(0d, 0d, 0d, -70d);
         hourHand.setStroke(Color.GREY);
         hourHand.setStrokeWidth(5d);
         hourHand.setStrokeLineCap(StrokeLineCap.ROUND);
@@ -84,10 +84,10 @@ public class ClockDemo extends Application {
         
         
         // define the rotate of hourHand
-        // minutes will affect hours angle 1/60 of an hour
+        // minutes will affect hour angle 1/60 of an hour
         Rotate hourRotate = new Rotate(intHour * 720 / 24 + intMinute * 30 / 60, 0, 0);
         // define the rotate of minuteHand
-        // minutes will affect hours angle 1/60 of an minute
+        // seconds will affect minute angle 1/60 of an minute
         Rotate minuteRotate = new Rotate(intMinute * 360 / 60 + intSecond * 6 / 60, 0, 0);
         // define the rotate of secondHand
         Rotate secondRotate = new Rotate(intSecond * 360 / 60, 0, 0);
